@@ -207,8 +207,8 @@ export default function Home() {
 
           <div className="relative mx-auto flex w-full max-w-sm items-end justify-center">
             <Phone
-              src="/screenshots/absen.png"
-              alt="Layar absen MerchGo"
+              src="/screenshots/splash.png"
+              alt="Splash screen MerchGo"
               className="w-56 rotate-[-4deg] sm:w-60"
             />
             <Phone
