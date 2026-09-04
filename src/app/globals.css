@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+
+  /* MerchGo palette — sinkron dengan app/colors.xml */
+  --color-primary: #2fcd4c;
+  --color-primary-dark: #1e8f37;
+  --color-primary-bright: #25ff4d;
+  --color-ink: #1a1c1a;
+  --color-canvas: #f7fcf8;
+  --color-success: #4caf50;
+  --color-danger: #f44336;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Blob hijau lembut di hero */
+.hero-glow {
+  background: radial-gradient(
+    ellipse at center,
+    rgba(47, 205, 76, 0.22),
+    rgba(47, 205, 76, 0) 65%
+  );
+}
+
+/* Frame HP */
+.phone {
+  border-radius: 2.4rem;
+  border: 6px solid var(--color-ink);
+  background: var(--color-ink);
+  box-shadow:
+    0 24px 60px -20px rgba(26, 28, 26, 0.45),
+    0 0 0 1.5px rgba(26, 28, 26, 0.08);
+  overflow: hidden;
+}
+.phone img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 1.9rem;
+}
